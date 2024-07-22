@@ -1,0 +1,37 @@
+.feed {
+  height: 100%;
+  width: 800px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.feed .feed-content {
+  margin-top: 250px;
+  margin-left: 80px;
+}
+
+/* Target the scrollbar track */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #131313;
+}
+
+/* Target the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the thumb */
+  border-radius: 15px; /* Radius of the thumb */
+}
+
+/* Target the scrollbar track when the thumb is being hovered */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color of the thumb on hover */
+}
+
+/* Target the scrollbar track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(45deg, #101010, #131313);
+  box-shadow: 5px -5px 19px #070707, -5px 5px 19px #1d1d1d;
+}

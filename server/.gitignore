@@ -1,0 +1,79 @@
+# Node.js dependencies
+node_modules/
+
+# Log files
+*.log
+logs/
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# npm-debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Coverage directory used by testing tools
+coverage/
+
+# Optional eslint cache
+eslintcache
+
+# Package-lock or yarn lock file
+package-lock.json
+yarn.lock
+
+# Docker files
+Dockerfile
+docker-compose.yml
+
+# Mac-specific files
+*.swp
+*.swo
+
+# npm and yarn cache
+.npm/
+.yarn/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Next.js build output
+.next/
+
+# Nuxt.js build output
+.nuxt/
+
+# Serverless
+.serverless/
+
+# Cloud provider artifacts
+*.aws/
+*.azure/
+*.gcp/
+
+# Secrets files
+*.pem
+*.key
+
+# Misc
+*.gz
+*.zip
+*.tar
+*.rar
