@@ -6,13 +6,13 @@ const connection = require("./db");
 const userRoutes = require("./routes/users");
 const authRoutes = require("./routes/auth");
 const Post = require("./models/post");
-
+const corsOption = { origin: true };
 // database connection
 connection();
 
 // middlewares
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOption));
 
 // routes
 app.use("/api/users", userRoutes);
