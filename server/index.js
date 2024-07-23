@@ -8,7 +8,7 @@ const authRoutes = require("./routes/auth");
 const Post = require("./models/post");
 
 const corsOptions = {
-  origin: "https://alias-five.vercel.app", 
+  origin: '*', 
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true, 
   preflightContinue:false,
