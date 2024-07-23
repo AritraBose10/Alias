@@ -12,9 +12,14 @@ const Login = () => {
   };
 
   const handleSubmit = async (e) => {
+    const url = `${
+      import.meta.env.VITE_PROD == "false"
+        ? import.meta.env.VITE_DEV_URL
+        : import.meta.env.VITE_PROD_URL
+    }/api/auth`;
+    console.log(import.meta.env);
     e.preventDefault();
     try {
-      const url = "http://localhost:5000/api/auth";
       const { data: res } = await axios.post(url, data);
       localStorage.setItem("token", res.data);
       window.location = "/";

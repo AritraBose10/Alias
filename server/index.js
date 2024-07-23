@@ -8,17 +8,18 @@ const authRoutes = require("./routes/auth");
 const Post = require("./models/post");
 
 const corsOptions = {
-  origin: "https://alias-five.vercel.app", // Replace with your frontend URL
+  origin: ["http://localhost:5173", "https://alias-five.vercel.app"],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials: true, // Allow cookies to be sent
+  credentials: true,
+  preflightContinue: false,
   optionsSuccessStatus: 204,
 };
 // database connection
 connection();
 
 // middlewares
-app.use(express.json());
 app.use(cors(corsOptions));
+app.use(express.json());
 
 // routes
 app.use("/api/users", userRoutes);

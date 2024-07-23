@@ -38,7 +38,7 @@ const Signup = () => {
   return (
     <div className="signup_container">
       <div className="signup_form_container">
-        <div className="left">
+        <div className="left-signup">
           <h1>Welcome Back</h1>
           <Link to="/login">
             <button type="button" className="white_btn">
@@ -46,7 +46,7 @@ const Signup = () => {
             </button>
           </Link>
         </div>
-        <div className="right">
+        <div className="right-signup">
           <form className="form_container" onSubmit={handleSubmit}>
             <h1>Create Account</h1>
             <input
