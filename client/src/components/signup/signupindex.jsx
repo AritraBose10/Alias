@@ -20,7 +20,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = `${import.meta.env.VITE_URL}/api/users`;
+      const url = `$https://alias-ntfs.onrender.com/api/users`;
       const { data: res } = await axios.post(url, data);
       navigate("/login");
       console.log(res.message);
