@@ -8,7 +8,7 @@ const authRoutes = require("./routes/auth");
 const Post = require("./models/post");
 
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://alias-five.vercel.app"],
+  origin: ["http://localhost:5173", "https://alias-guk3.onrender.com/"],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   preflightContinue: false,
